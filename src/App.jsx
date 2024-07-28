@@ -16,6 +16,7 @@ function App() {
         <MiniApps />
         <Bills />
         <Offers />
+        <div className="h-32"></div>
       </main>
       <NavigationBar />
     </div>

@@ -7,7 +7,7 @@ const Header = () => {
         window.location.href = path;
       };
   return (
-    <header className="bg-white absolute top-0 right-0 left-0 shadow">
+    <header className="bg-white fixed top-0 right-0 left-0 shadow w-full z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex clickabble items-center">
         <svg stroke="#2563eb" fill="#2563eb" stroke-width="1" viewBox="0 0 20 20"  width='2em'  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>        </div>
