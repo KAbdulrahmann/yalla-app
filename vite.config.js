@@ -10,4 +10,7 @@ export default defineConfig({
     },
   },
   plugins: [react()],
+  server: {
+    open: true, // Automatically open the app in the browser on start
+  },
 })

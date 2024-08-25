@@ -6,14 +6,18 @@ import moneyIcon from '../assets/moneyIcon.svg'; // Replace with your actual ico
 import socialIcon from '../assets/socialIcon.svg'; // Replace with your actual icon path
 import helpIcon from '../assets/helpIcon.svg'; // Replace with your actual icon path
 import logoIcon from '../assets/Yalla-logo.svg'; // Replace with your actual icon path
+import { useNavigate } from 'react-router-dom';
 
 const NavigationBar = () => {
+  const navigate = useNavigate();
+
   const handleNavigation = (url) => {
+    // navigate(url);
     window.location.href = url;
   };
 
   return (
-    <div className="flex justify-between items-center bg-white p-4 px-8 shadow-md rounded-t-3xl fixed bottom-0 w-full z-50">
+    <div className="fixed bottom-0 z-50 flex items-center justify-between w-full p-4 px-8 bg-white shadow-md rounded-t-3xl">
       <div className="flex flex-col items-center cursor-pointer" onClick={() => handleNavigation('/home')}>
         <img src={homeIcon} alt="Home" className="w-6 h-6 mb-1 " />
         <div className="text-xs text-blue-600">Home</div>
