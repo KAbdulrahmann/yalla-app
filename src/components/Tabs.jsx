@@ -6,7 +6,7 @@ function Tabs() {
       <button className="flex flex-col items-center">
         <img
           src="https://via.placeholder.com/30" // Replace with the home icon source
-          alt="Home"
+          alt=""
         />
         <span className="text-xs">Home</span>
       </button>

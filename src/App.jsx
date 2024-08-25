@@ -4,18 +4,18 @@ import Money from './screens/Money'
 import Contact from './screens/Contact'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './screens/Home';
+import NavigationBar from './components/NavigationBar';
 
 function App() {
   return (
-    <Router>
-      {/* <Home /> */}
+    <Router basename="/yalla-app">
+      <NavigationBar />
       <Routes>
-        <Route path="/" element={<Home />} >
+        <Route path="/" element={<Home />}/>
         <Route path="/money" element={<Money />} />
         <Route path="/contact" element={<Contact />} />
         {/* Add a fallback route to handle undefined paths */}
         <Route path="*" element={<NotFound />} />
-        </Route>
       </Routes>
      </Router>
   );
